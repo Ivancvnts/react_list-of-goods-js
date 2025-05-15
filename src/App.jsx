@@ -28,7 +28,7 @@ export const App = () => {
       return a.length - b.length;
     }
 
-    return goodsFromServer;
+    return 0;
   });
 
   if (reversed) {
