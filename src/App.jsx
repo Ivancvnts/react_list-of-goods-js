@@ -71,7 +71,12 @@ export const App = () => {
         <button
           type="button"
           className={reversed ? 'button is-info' : 'button is-info is-light'}
-          onClick={() => setReversed(!reversed)}
+          onClick={() => {
+            setReversed(!reversed);
+            if (sortField === '') {
+              setSorted(!sorted);
+            }
+          }}
         >
           Reverse
         </button>
